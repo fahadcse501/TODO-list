@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD To-Do List</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-800 min-h-screen flex items-center justify-center">
+    <div class="max-w-md w-full">
+        <h1 class="text-3xl font-bold text-center text-white mb-4">CRUD To-Do List</h1>
+        <div id="taskList" class="bg-gray-900 p-4 rounded-md shadow-md">
+            <!-- Task items will be appended here dynamically -->
+        </div>
+        <div class="mt-4">
+            <input type="text" id="taskInput" class="w-full px-3 py-2 rounded-md border-gray-700 bg-gray-800 text-white focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter task...">
+            <button id="addTaskBtn" class="mt-2 px-4 py-2 bg-blue-500 text-white font-semibold rounded-md focus:outline-none hover:bg-blue-600">Add Task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
